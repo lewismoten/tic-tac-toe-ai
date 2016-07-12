@@ -2,15 +2,23 @@
 
   'use strict';
 
-  let decisions = [
-      require('./lib/ai-win'),
-      require('./lib/ai-block'),
-      require('./lib/ai-fork'),
-      require('./lib/ai-block-fork'),
-      require('./lib/ai-center'),
-      require('./lib/ai-opposite-corner'),
-      require('./lib/ai-empty-corner'),
-      require('./lib/ai-empty-side')
+  let winStrategy = require('./lib/ai-win'),
+    blockStrategy = require('./lib/ai-block'),
+    forkStrategy = require('./lib/ai-fork'),
+    blockFormStrategy = require('./lib/ai-block-fork'),
+    centerStrategy = require('./lib/ai-center'),
+    oppositeCornerStrategy = require('./lib/ai-opposite-corner'),
+    emptyCornerStrategy = require('./lib/ai-empty-corner'),
+    emptySideStrategy = require('./lib/ai-empty-side'),
+    decisions = [
+      winStrategy,
+      blockStrategy,
+      forkStrategy,
+      blockFormStrategy,
+      centerStrategy,
+      oppositeCornerStrategy,
+      emptyCornerStrategy,
+      emptySideStrategy
     ];
 
   module.exports = (board) => {
