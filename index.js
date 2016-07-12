@@ -8,7 +8,7 @@
     blockFormStrategy = require('./lib/ai-block-fork'),
     centerStrategy = require('./lib/ai-center'),
     oppositeCornerStrategy = require('./lib/ai-opposite-corner'),
-    emptyCornerStrategy = require('./lib/ai-empty-corner'),
+    cornerStrategy = require('./lib/ai-corner'),
     sideStrategy = require('./lib/ai-side'),
     decisions = [
       winStrategy,
@@ -17,7 +17,7 @@
       blockFormStrategy,
       centerStrategy,
       oppositeCornerStrategy,
-      emptyCornerStrategy,
+      cornerStrategy,
       sideStrategy
     ];
 
