@@ -9,7 +9,7 @@
     centerStrategy = require('./lib/ai-center'),
     oppositeCornerStrategy = require('./lib/ai-opposite-corner'),
     emptyCornerStrategy = require('./lib/ai-empty-corner'),
-    emptySideStrategy = require('./lib/ai-empty-side'),
+    sideStrategy = require('./lib/ai-side'),
     decisions = [
       winStrategy,
       blockStrategy,
@@ -18,7 +18,7 @@
       centerStrategy,
       oppositeCornerStrategy,
       emptyCornerStrategy,
-      emptySideStrategy
+      sideStrategy
     ];
 
   module.exports = (board) => {

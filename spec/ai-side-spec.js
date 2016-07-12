@@ -1,10 +1,10 @@
 /* eslint-env jasmine */
 
-describe('ai-empty-side', () => {
+describe('ai-side', () => {
 
   'use strict';
 
-  let lib = require('../lib/ai-empty-side');
+  let lib = require('../lib/ai-side');
 
   it('picks top when other sides are marked', () => {
 
