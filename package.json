@@ -24,5 +24,8 @@
   "bugs": {
     "url": "https://github.com/lewismoten/tic-tac-toe-ai/issues"
   },
-  "homepage": "https://github.com/lewismoten/tic-tac-toe-ai#readme"
+  "homepage": "https://github.com/lewismoten/tic-tac-toe-ai#readme",
+  "devDependencies": {
+    "octothorpe-xo": "^1.0.0"
+  }
 }
